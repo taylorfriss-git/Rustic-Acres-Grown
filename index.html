@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rustic Acres Grown</title>
+
+    <meta
+      name="description"
+      content="Rustic Acres Grown is a small farm focused on thoughtfully grown food and sustainable practices."
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Rustic Acres Grown</h1>
+      <p class="tagline">Grown with care.</p>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p>
+          Rustic Acres Grown is a small, locally focused farm dedicated to growing
+          good food with intention, care, and respect for the land.
+        </p>
+      </section>
+
+      <section class="highlights">
+        <ul>
+          <li>Seasonal produce</li>
+          <li>Sustainably grown</li>
+          <li>Community-focused</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Rustic Acres Grown</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
