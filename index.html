@@ -1,44 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rustic Acres Grown</title>
-
+    <title>Rustic Acres Farm — Coming Soon</title>
     <meta
       name="description"
-      content="Rustic Acres Grown is a small farm focused on thoughtfully grown food and sustainable practices."
+      content="Rustic Acres Farm — website coming soon. Simple updates and information from the farm."
     />
-
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <header class="site-header">
-      <h1>Rustic Acres Grown</h1>
-      <p class="tagline">Grown with care.</p>
-    </header>
+    <!-- Skip link helps keyboard + screen reader users jump past repeated content -->
+    <a class="skip-link" href="#content">Skip to content</a>
 
-    <main>
-      <section class="intro">
-        <p>
-          Rustic Acres Grown is a small, locally focused farm dedicated to growing
-          good food with intention, care, and respect for the land.
+    <main class="wrap" id="content">
+      <section class="card" aria-label="Rustic Acres Farm coming soon">
+        <header class="header">
+          <img
+            src="assets/cow@4x.png"
+            alt="Illustration of a cow"
+            class="cow"
+          />
+
+          <h1>Rustic Acres Farm</h1>
+        </header>
+
+        <p class="message">
+          Our website is coming soon.
+          <br />
+          We’re building a simple place to share updates and information from the
+          farm.
         </p>
-      </section>
 
-      <section class="highlights">
-        <ul>
-          <li>Seasonal produce</li>
-          <li>Sustainably grown</li>
-          <li>Community-focused</li>
-        </ul>
+        <p class="subtle">Please check back soon.</p>
+
+        <footer class="footer">
+          <span>RusticAcresGrown.com</span>
+          <span class="divider" aria-hidden="true"></span>
+          <span>© <span id="year"></span> Rustic Acres Farm</span>
+        </footer>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Rustic Acres Grown</p>
-    </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
