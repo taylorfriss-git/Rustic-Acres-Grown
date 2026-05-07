@@ -1,51 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rustic Acres Farm — Coming Soon</title>
-    <meta
-      name="description"
-      content="Rustic Acres Farm — website coming soon. Simple updates and information from the farm."
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rustic Acres Farm</title>
 
-  <body>
-    <!-- Skip link helps keyboard + screen reader users jump past repeated content -->
-    <a class="skip-link" href="#content">Skip to content</a>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Young+Serif&family=Inter:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
 
-    <main class="wrap" id="content">
-      <section class="card" aria-label="Rustic Acres Farm coming soon">
-        <header class="header">
-          <img
-            src="assets/cow@4x.png"
-            alt="Illustration of a cow"
-            class="cow"
-          />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
 
-          <h1>Rustic Acres Farm</h1>
-        </header>
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="Rustic Acres Farm home">
+        <span class="brand-name">Rustic Acres</span>
+      </a>
 
-        <p class="message">
-          Our website is coming soon.
-          <br />
-          We’re building a simple place to share updates and information from the
-          farm.
-        </p>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <p class="subtle">Please check back soon.</p>
+  <main>
 
-        <footer class="footer">
-          <span>RusticAcresGrown.com</span>
-          <span class="divider" aria-hidden="true"></span>
-          <span>© <span id="year"></span> Rustic Acres Farm</span>
-        </footer>
-      </section>
-    </main>
+    <section class="hero-home">
+      <div class="hero-home-inner">
+        <h1 class="hero-title">Rustic Acres</h1>
+        <p class="hero-script">Farm-raised meats & local goods</p>
+        <p class="hero-intro">
+Rustic Acres is a pasture-based farm raising animals with care, patience, and respect for the land. We offer farm-raised meats, eggs, and seasonal vegetables, all produced using simple, non-GMO practices.        </p>
+      </div>
+    
+    </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+    <section class="hero-photo-band" aria-label="Farm animals">
+      <img src="assets/todd_cows.avif" alt="Cows at Rustic Acres Farm">
+    </section>
+
+    <section class="explore-section">
+      <div class="explore-inner">
+        <h2>Explore the farm</h2>
+
+        <div class="explore-grid">
+
+          <a class="explore-card" href="about.html">
+            <div class="explore-image">
+              <img src="assets/house.jpg" alt="Farm building and trees">
+            </div>
+            <h3>About</h3>
+            <p>Discover how Rustic Acres is run and the simple, honest practices behind the farm.</p>
+          </a>
+
+          <a class="explore-card" href="products.html">
+            <div class="explore-image">
+              <img src="assets/products.jpg" alt="Selection of farm meats">
+            </div>
+            <h3>Products</h3>
+            <p>See what’s offered at the farm, from meats and eggs to seasonal vegetables and baked goods, all raised without GMOs.</p>
+          </a>
+
+          <a class="explore-card" href="events.html">
+            <div class="explore-image">
+              <img src="assets/events.JPG" alt="Child interacting with a goat">
+            </div>
+            <h3>Events</h3>
+            <p>Join us for seasonal events at the farm and plan your visit around what’s coming up.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <span>Rustic</span>
+      <span>Acres</span>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Visit Us</h4>
+        <p>107 Huber Rd.</p>
+        <p>Warrensburg, NY 12885</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p><a href="tel:15186368365">(518) 636-8365</a></p>
+        <p><a href="mailto:toddolden0@gmail.com">toddolden0@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
